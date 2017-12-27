@@ -33,6 +33,10 @@ export default class Menu extends Component {
     };
   }
 
+  componentWillMount() {
+    this.defaultOpenedsChanged(this.props.defaultOpeneds);
+  }
+
   componentDidMount() {
     this.openActiveItemMenus();
   }
